@@ -16,19 +16,19 @@ Connect the UNO and the mother board with USB port
 Click **Manage Libraries**  <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/arduino_manage_library.png" width="800" height="400">
 
 
-Install **Rosserial Arduino Library** and **Adafruit NeoPixel**
+Install **Rosserial Arduino Library** and **Adafruit NeoPixel**.
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_rosserial.png" width="600" height="200">
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_adafruit.png" width="600" height="200">
 
 
-Set the **Board** and **Port** correctly
+Set the **Board** and **Port** correctly.
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/UNO_BoardType.jpg" width="600" height="200">
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/UNO_Port.jpg" width="600" height="200">
 
 
-Verify and upload **arduino_uno.ino** to UNO
+Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** buttons to write the sketch into UNO.
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/verify.png" width="300" height="200"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/upload.png" width="300" height="200">
 
@@ -50,6 +50,6 @@ Verify and upload **arduino_uno.ino** to UNO
     ```
     rostopic pub /state std_msgs/String "data: 'demo'" 
     ``` 
-
-
+    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/demo.gif" width="300" height="300">
+    
 
