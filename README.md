@@ -51,5 +51,21 @@ Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** butt
     rostopic pub /state std_msgs/String "data: 'demo'" 
     ``` 
     <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/demo.gif" width="300" height="300">
-    
+
+
+
+
+### LED Define
+
+The number of LED unit starts from 0 which is the unit closest to the wire.
+
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/inside_detail.png"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/outside_detail.png">
+
+
+The light moves from No.0 to No.7 look like below.
+
+
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/no.0_to_no.7.gif">
+
+
 
