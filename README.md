@@ -44,7 +44,12 @@ Verify and upload **arduino_uno.ino** to UNO
     ```
     rosrun rosserial_arduino serial_node.py _port:=/dev/ttyACM0 _baud:=57600
     ``` 
-3. 
+    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/terminal_rosserial.png" width="600" height="200">
+    
+3. In terminal 3
+    ```
+    rostopic pub /state std_msgs/String "data: 'demo'" 
+    ``` 
 
 
 
