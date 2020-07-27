@@ -16,7 +16,6 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(num, PIN_, NEO_GRB + NEO_KHZ800);
 
 ros::NodeHandle  nh;
 std_msgs::String str_msg;
-ros::Publisher chatter("color4led", &str_msg); 
 
 
 
@@ -90,7 +89,6 @@ ros::Subscriber<std_msgs::String> sub("state", messageCb );
 void setup()
 {
   nh.initNode();
-  nh.advertise(chatter);
   nh.subscribe(sub);
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
