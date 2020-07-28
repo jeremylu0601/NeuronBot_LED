@@ -49,6 +49,12 @@ Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** butt
 3. In terminal 3
     ```
     rostopic pub /state std_msgs/String "data: 'demo'" 
+    # demo : display all modes
+    # g : green breath lamp
+    # o : orange breath lamp
+    # f : blue light moves from No.0 to No.7
+    # b : blue light moves from No.7 to No.0
+    
     ``` 
     <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/demo.gif" width="300" height="300">
 
