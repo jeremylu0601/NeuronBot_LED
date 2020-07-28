@@ -30,7 +30,7 @@ The orange wire connects the GND on GPIO and the GND on Arduino UNO.
 
 The yellow wire is the signal wire from the LED strip. 
 
-Connect the UNO and the mother board with USB port
+Connect the UNO and the mother board with USB cable.
 
 
 ### Rosserial Install for Motherboard
