@@ -26,9 +26,9 @@ void messageCb( const std_msgs::String& toggle_msg){
 
 if (state== "demo")
   {
-    breathe(1,0); //orange breath light 
+    breathe(1,0); //orange breath lamp 
     
-    breathe(1,1); //green breath light 
+    breathe(1,1); //green breath lamp 
      
     backward(0,5); //blue marquee, from no.7 unit to no.0 unit
 
@@ -44,12 +44,12 @@ if (state== "demo")
  
   if (state== "o")
   {
-    breathe(1,0); //orange breath light 
+    breathe(1,0); //orange breath lamp
     }
 
   if (state== "g")
   {
-    breathe(1,1); //green breath light
+    breathe(1,1); //green breath lamp
     }
   
   if (state== "f")
