@@ -1,6 +1,6 @@
-# NeuronBot_LED
+# NeuronBot_LED (Arduino UNO for example)
 
-### Arduino IDE Setup and Sketch Upload
+### Arduino IDE Setup and Sketch Upload (This step can be done on a laptop)
 
 Click **Manage Libraries**  
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/arduino_manage_library.png" width="800" height="400">
@@ -22,7 +22,7 @@ Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** butt
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/verify.png" width="300" height="200"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/upload.png" width="300" height="200">
 
-### Hardware Setup (Arduino UNO for example)
+### Hardware Setup (connect the Arduino board and NeuronBot)
 
 ![](https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/hardware.png)
 
@@ -47,6 +47,7 @@ Connect the UNO and the mother board with USB port
 2. In terminal 2
     ```
     rosrun rosserial_arduino serial_node.py _port:=/dev/ttyACM0 _baud:=57600
+    # _port : please check where the Arduino board is 
     ``` 
     <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/terminal_rosserial.png" width="600" height="200">
     
