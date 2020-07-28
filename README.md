@@ -1,20 +1,5 @@
 # NeuronBot_LED
 
-### Rosserial Install for Motherboard
-
-[rosserial](https://github.com/ros-drivers/rosserial)
-
-### Hardware Setup (Arduino UNO for example)
-
-![](https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/hardware.png)
-
-The orange wire connects the GND on GPIO and the GND on Arduino UNO.
-
-The yellow wire is the signal wire from the LED strip. 
-
-Connect the UNO and the mother board with USB port
-
-
 ### Arduino IDE Setup and Sketch Upload
 
 Click **Manage Libraries**  
@@ -37,6 +22,20 @@ Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** butt
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/verify.png" width="300" height="200"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/upload.png" width="300" height="200">
 
+### Hardware Setup (Arduino UNO for example)
+
+![](https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/hardware.png)
+
+The orange wire connects the GND on GPIO and the GND on Arduino UNO.
+
+The yellow wire is the signal wire from the LED strip. 
+
+Connect the UNO and the mother board with USB port
+
+
+### Rosserial Install for Motherboard
+
+[rosserial](https://github.com/ros-drivers/rosserial)
 
 ### Check the function
 
