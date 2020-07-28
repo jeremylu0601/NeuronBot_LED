@@ -1,8 +1,8 @@
 # NeuronBot_LED
 
-### Rosserial Install
+### Rosserial Install for Motherboard
 
-[GitHub Pages](https://github.com/ros-drivers/rosserial)
+[rosserial](https://github.com/ros-drivers/rosserial)
 
 ### Hardware Setup (Arduino UNO for example)
 
@@ -17,10 +17,11 @@ Connect the UNO and the mother board with USB port
 
 ### Arduino IDE Setup and Sketch Upload
 
-Click **Manage Libraries**  <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/arduino_manage_library.png" width="800" height="400">
+Click **Manage Libraries**  
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/arduino_manage_library.png" width="800" height="400">
 
 
-Install **Rosserial Arduino Library** and **Adafruit NeoPixel**.
+Install **Rosserial Arduino Library** and **Adafruit NeoPixel**. These 2 libraries are for the Arduino Board.
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_rosserial.png" width="600" height="200">
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_adafruit.png" width="600" height="200">
