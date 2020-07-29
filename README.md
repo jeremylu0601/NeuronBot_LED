@@ -24,7 +24,7 @@ Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** butt
 
 ### Hardware Setup (connect the Arduino board and NeuronBot)
 
-![](https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/hardware.png)
+
 
 The orange wire connects the GND on GPIO and the GND on Arduino UNO.
 
