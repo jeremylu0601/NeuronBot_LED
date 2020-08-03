@@ -1,4 +1,4 @@
-# NeuronBot_LED (Arduino UNO for example)
+# NeuronBot_LED (Arduino Nano for example)
 
 ### Arduino IDE Setup and Sketch Upload (This step can be done on a laptop)
 
@@ -6,9 +6,8 @@ Click **Manage Libraries**
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/arduino_manage_library.png" width="800" height="400">
 
 
-Install **Rosserial Arduino Library** and **Adafruit NeoPixel** for the Arduino Board.
+Install **Adafruit NeoPixel** for the Arduino Board.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_rosserial.png" width="600" height="200">
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_adafruit.png" width="600" height="200">
 
 
