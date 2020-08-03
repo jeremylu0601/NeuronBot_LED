@@ -13,9 +13,7 @@ Install **Adafruit NeoPixel** for the Arduino Board.
 
 Set the **Board**, **Processor** and **Port** correctly.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_BoardSet.png" width="600" height="200">
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_ProcessorSet.png" width="600" height="200">
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_PortSet.png" width="600" height="200">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_BoardSet.png" width="400" height="400"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_ProcessorSet.png" width="400" height="400"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_PortSet.png" width="400" height="400">
 
 Open **Arduino_Nano.ino** in Arduino IDE and click **Verify** and **Upload** buttons to write the sketch into UNO.
 
@@ -23,11 +21,9 @@ Open **Arduino_Nano.ino** in Arduino IDE and click **Verify** and **Upload** but
 
 ### Hardware Setup (connect the Arduino board and NeuronBot)
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Hardware.png">
+Put the USB cable into the USB hub on NeuronBot.
 
-The yellow wire is the signal wire from the LED strip. 
-
-Connect the UNO and the mother board with USB cable.
+Please find out to which port the Arduino board is connected, e.g., **/dev/ttyUSB0**.  
 
 
 ### Check the function
