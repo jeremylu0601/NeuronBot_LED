@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import serial ## need pip
+import serial ## pip install pyserial
 import time
 
 class Strip:
