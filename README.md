@@ -17,7 +17,7 @@ Set the **Board** and **Port** correctly.
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/UNO_Port.jpg" width="600" height="200">
 
 
-Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** buttons to write the sketch into UNO.
+Open **Arduino_Nano.ino** in Arduino IDE and click **Verify** and **Upload** buttons to write the sketch into UNO.
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/verify.png" width="300" height="200"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/upload.png" width="300" height="200">
 
@@ -29,10 +29,6 @@ The yellow wire is the signal wire from the LED strip.
 
 Connect the UNO and the mother board with USB cable.
 
-
-### Rosserial Install for Motherboard
-
-[rosserial](https://github.com/ros-drivers/rosserial)
 
 ### Check the function
 
