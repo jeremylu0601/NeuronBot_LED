@@ -45,14 +45,7 @@ Please find out to which port the Arduino board is connected, e.g., **/dev/ttyUS
 
 The number of LED unit starts from 0 which is the unit closest to the wire.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/inside_detail.png"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/outside_detail.png">
-
-
-When the light moves from No.0 to No.7, it looks like below.
-
-
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/no.0_to_no.7.gif">
-
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/nano_led.png">
 
 ### Build your own function
 2. In terminal 2
