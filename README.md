@@ -30,9 +30,25 @@ Please find out to which port the Arduino board is connected, e.g., **/dev/ttyUS
 
 1. In terminal 1
     ```
-    roscore
+    python LED_Fun.py
     ```
-    
+    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/terminal_nano.png" width="300" height="200">
+    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/demo_nano.gif" width="300" height="200">
+
+### LED Define
+
+The number of LED unit starts from 0 which is the unit closest to the wire.
+
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/inside_detail.png"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/outside_detail.png">
+
+
+When the light moves from No.0 to No.7, it looks like below.
+
+
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/no.0_to_no.7.gif">
+
+
+### Build your own function
 2. In terminal 2
     ```
     rosrun rosserial_arduino serial_node.py _port:=/dev/ttyACM0 _baud:=57600
@@ -57,17 +73,6 @@ Please find out to which port the Arduino board is connected, e.g., **/dev/ttyUS
 
 
 
-### LED Define
-
-The number of LED unit starts from 0 which is the unit closest to the wire.
-
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/inside_detail.png"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/outside_detail.png">
-
-
-When the light moves from No.0 to No.7, it looks like below.
-
-
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/no.0_to_no.7.gif">
 
 
 
