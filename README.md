@@ -65,7 +65,7 @@ if __name__ == '__main__':
     s.delay(1000) ## Wait 1000 ms to let the strip have enough time to execute the command.
                   ## Feel free to change the delay time.  
     s.setPixelColor(1,180,0,0) ## Define NO.1 LED unit be red with intensity 100.
-                               ## The light is still off.
+                               ## We only define the LED unit, but the light is still off.
     s.show() ## Turn on strip
     s.delay(1000)
     s.demo() ## Display all basic function in class Strip
