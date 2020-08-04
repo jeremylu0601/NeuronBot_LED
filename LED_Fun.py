@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import serial ## pip install pyserial
 import time
+import sys, getopt
 
 class Strip:
     def __init__(self, arduino_port, baudrate,num):
@@ -134,52 +135,69 @@ class Strip:
             self.delay(wait)
         return 0
 
+    def demo(self):
+        self.clear()
+        print("clear")
+        self.delay(1000)
+        self.setPixelColor(1,180,0,0)
+        print("No.1 unit is red")
+        self.show()
+        self.delay(1000)
+        self.setPixelColor(2,0,180,0)
+        print("No.2 unit is green")
+        self.show()
+        self.delay(1000)
+        self.setPixelColor(3,0,0,180)
+        print("No.3 unit is blue")
+        self.show()
+        self.delay(1000)
+        self.clear()
+        print("clear")
+        self.delay(1000)
+        print("blink")
+        self.blink()
+        print("move from the end to the start")
+        self.backward()
+        self.delay(1000)
+        print("move from the start to the end")
+        self.forward()
+        self.delay(1000)
+        print("breath")
+        self.breath()
+        self.clear()
+        self.close()
+        print("close port")
+
+        return 0
 
 
-def demo(port_arduino,baudrate,num):
-    s=Strip(port_arduino,baudrate,num)
-    s.clear()
-    print("clear")
-    s.delay(1000)
-    s.setPixelColor(1,180,0,0)
-    print("No.1 unit is red")
-    s.show()
-    s.delay(1000)
-    s.setPixelColor(2,0,180,0)
-    print("No.2 unit is green")
-    s.show()
-    s.delay(1000)
-    s.setPixelColor(3,0,0,180)
-    print("No.3 unit is blue")
-    s.show()
-    s.delay(1000)
-    s.clear()
-    print("clear")
-    s.delay(1000)
-    print("blink")
-    s.blink()
-    print("move from the end to the start")
-    s.backward()
-    s.delay(1000)
-    print("move from the start to the end")
-    s.forward()
-    s.delay(1000)
-    print("breath")
-    s.breath()
-    s.clear()
-    s.close()
-    print("close port")
 
 
+def main(argv):
+    port = ''
+    num = ''
+    try:
+        opts, args = getopt.getopt(argv,"hp:n:",["port=","num="])
+    except getopt.GetoptError:
+        print ("python LED_Fun.py -p <Arduino Port> -n <Number of LED units>")
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print ("python LED_Fun.py -p <Arduino Port> -n <Number of LED units>")
+            sys.exit()
+        elif opt in ("-p", "--port"):
+            port = arg
+        elif opt in ("-n", "--num"):
+            num = int(arg)
+    if port=='' or num == '':
+        print ("python LED_Fun.py -p <Arduino Port> -n <Number of LED units>")
+        sys.exit()
+    rate=115200
+    s=Strip(port,rate,num)
+    s.demo()
 
-
-if __name__ == '__main__':
-
-    port='/dev/ttyUSB0' ## port for the Arduino Board
-    rate=115200 ## baud rate
-    num=30 ## the number of LED units
-    demo(port,rate,num)
-
+if __name__ == "__main__":
+   main(sys.argv[1:])
 
 
 
