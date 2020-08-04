@@ -13,9 +13,9 @@ Install **Adafruit NeoPixel** for the Arduino Board.
 
 Set the **Board**, **Processor** and **Port** correctly.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/boardset.png" width="400" height="400"> 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/processorset.png" width="400" height="400"> 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/portset.png" width="400" height="400">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/boardset.png" width="400" height="300"> 
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/processorset.png" width="400" height="300"> 
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/portset.png" width="400" height="300">
 
 Open **Arduino_Nano.ino** in Arduino IDE and click **Verify** and **Upload** buttons to write the sketch into UNO.
 
@@ -38,7 +38,7 @@ Please find out to which port the Arduino board is connected, e.g., **/dev/ttyUS
     ```
     python LED_Fun.py
     ```
-    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/terminal_nano.png" width="300" height="200">
+    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/output_terminal.png" width="300" height="200">
     <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/demo_nano.gif" width="300" height="200">
 
 ### LED Define
