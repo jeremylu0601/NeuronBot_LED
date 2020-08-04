@@ -4,10 +4,11 @@ import time
 import sys, getopt
 
 class Strip:
-    def __init__(self, arduino_port, baudrate,num):
+    def __init__(self, arduino_port,num):
         # arduino_port : port for the Arduino Board
         # baudrate : baud rate
         # num : the number of LED units
+        baudrate=115200
         ser = serial.Serial(arduino_port, baudrate)
         if ser.isOpen():
             self.serial=ser
@@ -192,8 +193,7 @@ def main(argv):
     if port=='' or num == '':
         print ("python LED_Fun.py -p <Arduino Port> -n <Number of LED units>")
         sys.exit()
-    rate=115200
-    s=Strip(port,rate,num)
+    s=Strip(port,num)
     s.demo()
 
 if __name__ == "__main__":
