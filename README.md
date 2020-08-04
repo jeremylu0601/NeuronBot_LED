@@ -36,7 +36,9 @@ Please find out to which port the Arduino board is connected, e.g., **/dev/ttyUS
     ```
 2. Execute the script
     ```
-    python LED_Fun.py
+    python LED_Fun.py --port /dev/ttyUSB0 --num 30
+    # port : the port where the USB cable is, e.g., /dev/ttyUSB0.
+    # num : the number of LED units on the strip
     ```
     <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/output_terminal.png" width="300" height="200">
     <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/demo_nano.gif" width="300" height="200">
@@ -47,29 +49,17 @@ The number of LED unit starts from 0 which is the unit closest to the wire.
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/nano_led.png">
 
-### Build your own function
-2. In terminal 2
+### Easy to build your own LED function
+Import the class Strip at the beginning 
     ```
-    rosrun rosserial_arduino serial_node.py _port:=/dev/ttyACM0 _baud:=57600
-    # _port : please check where the Arduino board is 
+    #!/usr/bin/env python
+    from LED_Fun import Strip
+    if __name__ == '__main__':
+        port='/dev/ttyUSB0' ## port for the Arduino Board
+        num=30 ## the number of LED units
+        s=Strip(port,num)
+        s.demo()
     ``` 
-    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/terminal_rosserial.png" width="600" height="200">
-    
-3. In terminal 3
-    ```
-    rostopic pub /state std_msgs/String "data: 'demo'" 
-    # demo : display all modes
-    # g : green breath lamp
-    # o : orange breath lamp
-    # f : blue light moves from No.0 to No.7
-    # b : blue light moves from No.7 to No.0
-    # y : yellow blink
-    # r : red blink
-    # p : purple blink
-    ``` 
-    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/demo.gif" width="300" height="300">
-
-
 
 
 
