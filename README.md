@@ -3,28 +3,28 @@
 ### Arduino IDE Setup and Sketch Upload (This step can be done on a laptop)
 
 Click **Manage Libraries**  
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/arduino_manage_library.png" width="800" height="400">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/arduino_manage_library.png" width="800" height="400">
 
 
 Install **Rosserial Arduino Library** and **Adafruit NeoPixel** for the Arduino Board.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_rosserial.png" width="600" height="200">
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/download_adafruit.png" width="600" height="200">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/download_rosserial.png" width="600" height="200">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/download_adafruit.png" width="600" height="200">
 
 
 Set the **Board** and **Port** correctly.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/UNO_BoardType.jpg" width="600" height="200">
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/UNO_Port.jpg" width="600" height="200">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/UNO_BoardType.jpg" width="600" height="200">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/UNO_Port.jpg" width="600" height="200">
 
 
 Open **arduino_uno.ino** in Arduino IDE and click **Verify** and **Upload** buttons to write the sketch into UNO.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/verify.png" width="300" height="200"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/upload.png" width="300" height="200">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/verify.png" width="300" height="200"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/upload.png" width="300" height="200">
 
 ### Hardware Setup (connect the Arduino board and NeuronBot)
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Hardware.png">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/Hardware.png">
 
 The yellow wire is the signal wire from the LED strip. 
 
@@ -47,7 +47,7 @@ Connect the UNO and the mother board with USB cable.
     rosrun rosserial_arduino serial_node.py _port:=/dev/ttyACM0 _baud:=57600
     # _port : please check where the Arduino board is 
     ``` 
-    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/terminal_rosserial.png" width="600" height="200">
+    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/terminal_rosserial.png" width="600" height="200">
     
 3. In terminal 3
     ```
@@ -61,7 +61,7 @@ Connect the UNO and the mother board with USB cable.
     # r : red blink
     # p : purple blink
     ``` 
-    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/demo.gif" width="300" height="300">
+    <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/demo.gif" width="300" height="300">
 
 
 
@@ -70,13 +70,13 @@ Connect the UNO and the mother board with USB cable.
 
 The number of LED unit starts from 0 which is the unit closest to the wire.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/inside_detail.png"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/outside_detail.png">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/inside_detail.png"> <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/outside_detail.png">
 
 
 When the light moves from No.0 to No.7, it looks like below.
 
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/no.0_to_no.7.gif">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/rosserial/images/no.0_to_no.7.gif">
 
 
 
