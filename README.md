@@ -51,15 +51,15 @@ The number of LED unit starts from 0 which is the unit closest to the wire.
 
 ### Easy to build your own LED function
 Import the class Strip at the beginning 
-    ```
-    #!/usr/bin/env python
-    from LED_Fun import Strip
-    if __name__ == '__main__':
-        port='/dev/ttyUSB0' ## port for the Arduino Board
-        num=30 ## the number of LED units
-        s=Strip(port,num)
-        s.demo()
-    ``` 
+```python
+#!/usr/bin/env python
+from LED_Fun import Strip
+if __name__ == '__main__':
+    port='/dev/ttyUSB0' ## port for the Arduino Board
+    num=30 ## the number of LED units
+    s=Strip(port,num)
+    s.demo()
+```
 
 
 
