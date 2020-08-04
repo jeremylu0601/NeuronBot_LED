@@ -49,7 +49,7 @@ The number of LED unit starts from 0 which is the unit closest to the wire.
 
 <img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/nano_led.png">
 
-### Easy to build your own LED function
+### Build your own LED function
 Import the class Strip at the beginning 
 
 For example,
