@@ -66,9 +66,10 @@ if __name__ == '__main__':
                   ## Feel free to change the delay time.  
     s.setPixelColor(1,180,0,0) ## Define NO.1 LED unit be red with intensity 100.
                                ## We only define the LED unit, but the light is still off.
-    s.show() ## Turn on strip
+    s.show() ## Turn on strip.
     s.delay(1000)
-    s.demo() ## Display all basic function in class Strip
+    s.demo() ## Display all basic function in class Strip.
+    s.close() ## Disconnect the serial port object.
 ```
 
 
