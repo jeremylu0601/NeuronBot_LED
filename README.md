@@ -13,9 +13,9 @@ Install **Adafruit NeoPixel** for the Arduino Board.
 
 Set the **Board**, **Processor** and **Port** correctly.
 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_BoardSet.png" width="400" height="400"> 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_ProcessorSet.png" width="400" height="400"> 
-<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/Nano_PortSet.png" width="400" height="400">
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/boardset.png" width="400" height="400"> 
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/processorset.png" width="400" height="400"> 
+<img src="https://github.com/jeremylu0601/NeuronBot_LED/blob/master/images/portset.png" width="400" height="400">
 
 Open **Arduino_Nano.ino** in Arduino IDE and click **Verify** and **Upload** buttons to write the sketch into UNO.
 
